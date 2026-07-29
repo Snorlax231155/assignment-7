@@ -46,7 +46,15 @@ The implementation follows a structured pipeline:
 ---
 
 ## Results
-The Elbow Method clearly identified **K=5** as the optimal number of clusters. The 5 customer clusters are profiled as follows:
+The Elbow Method was used to determine the optimal number of clusters by plotting the Within-Cluster Sum of Squares (Inertia) against the number of clusters $K$. 
+
+The optimal number of clusters was determined to be **K=5** because:
+- **Elbow Point:** The curve shows a distinct inflection point (elbow) at $K=5$.
+- **Diminishing Returns:** The drop in inertia is very steep from $K=1$ to $K=5$, but becomes significantly slower and more linear after $K=5$, meaning adding more clusters yields diminishing returns.
+
+![Elbow Curve](elbow_curve.png)
+
+The 5 customer clusters are profiled as follows:
 
 | Cluster ID | Cluster Name | Average Age | Average Income (k$) | Average Spending Score | Gender Distribution |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -57,6 +65,8 @@ The Elbow Method clearly identified **K=5** as the optimal number of clusters. T
 | **Cluster 4** | Older Males, Mid Income/Spending | ~55.7 years | ~$53.7k | ~36.8 | 100% Male |
 
 *PCA successfully reduced the 4D space into 2 principal components, explaining approximately 60% of the total variance, which made it possible to visually inspect the cluster boundaries and confirm clear segregation.*
+
+![PCA Customer Clusters](pca_clusters.png)
 
 ---
 
