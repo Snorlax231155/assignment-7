@@ -22,7 +22,6 @@ To achieve this, we:
 The dataset used is the **Mall Customer Segmentation Dataset**:
 - [Kaggle Dataset Link](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
 
-*(Note: The `Mall_Customers.csv` file is included in this repository).*
 
 ---
 
@@ -71,4 +70,4 @@ The 5 customer clusters are profiled as follows:
 ---
 
 ## Conclusion
-In this assignment, we successfully performed customer segmentation on the Mall Customer dataset using K-Means Clustering and visualized the results in 2D using PCA. By standardizing the features (Age, Gender, Annual Income, and Spending Score), we identified 5 distinct customer groups. These segments enable targeted marketing campaigns, such as offering premium catalogs to high-income spenders and loyalty rewards to younger groups. A major limitation of K-Means is its sensitivity to feature scaling and spherical shape assumptions. In contrast, PCA is highly advantageous for reducing dimensions and enabling visual inspection of complex customer profiles in a 2D space.
+We successfully performed customer segmentation on the Mall Customer dataset using K-Means Clustering and visualized the results in 2D using PCA. By standardizing the features (Age, Gender, Annual Income, and Spending Score), we identified 5 distinct customer groups. These segments enable targeted marketing campaigns, such as offering premium catalogs to high-income spenders and loyalty rewards to younger groups. A major limitation of K-Means is its sensitivity to feature scaling and spherical shape assumptions. In contrast, PCA is highly advantageous for reducing dimensions and enabling visual inspection of complex customer profiles in a 2D space.
